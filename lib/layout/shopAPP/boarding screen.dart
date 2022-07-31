@@ -16,8 +16,8 @@ boarding({
 List<boarding> boardinglist=[
   boarding(
     image: 'images/onboard.jpg',
-    title: 'title',
-    body: 'body',
+    title: 'Hello welcome to Matgar',
+    body: 'Our Hot offers are waiting for you',
   )
 ];
 

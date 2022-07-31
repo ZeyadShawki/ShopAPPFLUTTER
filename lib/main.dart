@@ -88,7 +88,7 @@ late final Widget startwidget;
 
              darkTheme: darktheme,
 
-             themeMode: newscubit.get(context).isdark?ThemeMode.dark:ThemeMode.light,
+             themeMode: ThemeMode.light,
              home:startwidget
 
            );
