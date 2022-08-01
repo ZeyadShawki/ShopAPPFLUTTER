@@ -111,7 +111,7 @@ Widget buildSEARCHItem(SearchProduct model, context) =>
               maxLines: 4,
               overflow: TextOverflow.ellipsis,
               style: const TextStyle(
-                  fontSize: 17.0, color: Colors.black, height: 1.0,fontWeight: FontWeight.bold),
+                  fontSize: 17.0, color: Colors.white, height: 1.0,fontWeight: FontWeight.bold),
             ),
             const Spacer(),
             Row(

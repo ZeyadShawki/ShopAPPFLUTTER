@@ -46,8 +46,8 @@ class _onboardingscreenState extends State<onboardingscreen> {
   List<boarding> boardinglist=[
 boarding(
 image: 'images/onboard.jpg',
-title: 'title',
-body: 'body',
+  title: 'Hello, welcome to Matgar',
+  body: 'Our Hot offers are waiting for you',
 ),
   boarding(
     image: 'images/onboard.jpg',
@@ -56,8 +56,8 @@ body: 'body',
   ),
   boarding(
     image: 'images/onboard.jpg',
-    title: 'title',
-    body: 'body',
+    title: 'Hello, welcome to Matgar',
+    body: 'Our Hot offers are waiting for you',
   ),
 ];
 
@@ -164,8 +164,8 @@ child: Icon(Icons.navigate_next),
 
   style: TextStyle(
 
-  fontSize: 50,
-
+  fontSize: 30,
+fontWeight: FontWeight.bold
   ),
 
 

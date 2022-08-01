@@ -108,7 +108,7 @@ height: 100,
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Container(
-              color: Colors.white,
+              color: Colors.black,
               child: GridView.count
                 (
 mainAxisSpacing: 10,
@@ -168,6 +168,7 @@ style: TextStyle(
                '${model.name}',
             maxLines: 2,
             style: TextStyle(
+              color: Colors.white,
               fontWeight: FontWeight.bold,
             ),
             overflow: TextOverflow.ellipsis,
@@ -200,6 +201,7 @@ Spacer(),
 Container(
   height: 40,
   width: 40,
+  color: Colors.black,
   child:   IconButton(onPressed: (){
 homelayoutcubit.get(context).changefav(model.id);
 

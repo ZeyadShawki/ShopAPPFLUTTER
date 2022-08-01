@@ -34,24 +34,12 @@ void   main() {
         () async{
 
           WidgetsFlutterBinding.ensureInitialized();
-          dioHelper1.init();
+          Diohelper.init();
          await cachehelper.init();
-bool onboarding=cachehelper.getdata(key: 'onboarding');
-cachehelper.token=cachehelper.getdata(key: 'token');
+         runApp(news_layout());
+
           Widget widget;
 
-if(onboarding!=null)
-  {
-    if(cachehelper.token!=null)
-      widget=shopplayout();
-    else     widget=loginshopp();
-
-  }
-else widget=onboardingscreen();
-
-          runApp(MyApp(
-startwidget: widget,
-          ));
     },
     blocObserver: MyBlocObserver(),
   );
@@ -68,11 +56,8 @@ late final Widget startwidget;
     return MultiBlocProvider(
       providers: [
         BlocProvider(
-          create: (BuildContext context)=>newscubit(),),
+          create: (BuildContext context)=>newscubit()..getscience()..getscience()..getbuisness()..getsport()),
 
-    BlocProvider(
-    create: (BuildContext context)=>homelayoutcubit()..gethomedata()..getcategoriesdata()..getfavoritedata()..getUSERdata(),
-  ),
 
       ],
 
@@ -82,15 +67,18 @@ late final Widget startwidget;
          listener: (context,state){},
           builder: (context,state){
            print(state);
-           return MaterialApp(
-             debugShowCheckedModeBanner: false,
-             theme: lighttheme,
+           return MediaQuery(
+             data: new MediaQueryData(),
+             child: MaterialApp(
+               debugShowCheckedModeBanner: false,
+               theme: lighttheme,
 
-             darkTheme: darktheme,
+               darkTheme: darktheme,
 
-             themeMode: ThemeMode.light,
-             home:startwidget
+               themeMode: ThemeMode.light,
+               home: news_layout(),
 
+             ),
            );
           },
         ),
