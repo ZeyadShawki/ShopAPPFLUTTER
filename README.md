@@ -4,7 +4,7 @@ A new Flutter project.
 
 ## Getting Started
 
-SHOPP APP Ecomerance app for ios and android
+SHOPP APP Ecommerce  app for ios and android
  
  Browse our latest new arrivals
  ![20220809_180829230 1](https://user-images.githubusercontent.com/110336659/183703563-18bfd412-e522-4c7f-9b8f-9a757e1ba806.png)
